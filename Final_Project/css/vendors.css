@@ -1,0 +1,306 @@
+/* Vendors Module Specific Styles */
+
+.vendor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.vendor-title-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.vendor-title-section h1 {
+    color: var(--primary);
+    margin: 0;
+}
+
+.vendor-status {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.vendor-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.vendor-details-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.vendor-main-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.vendor-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.vendor-info {
+    padding: 1rem;
+}
+
+.status-active {
+    background: var(--success);
+    color: white;
+}
+
+.status-inactive {
+    background: var(--dark-gray);
+    color: white;
+}
+
+.status-confirmed {
+    background: var(--success);
+    color: white;
+}
+
+.status-pending {
+    background: var(--warning);
+    color: var(--primary);
+}
+
+.status-cancelled {
+    background: var(--error);
+    color: white;
+}
+
+/* Vendor Card Styles */
+.vendor-card {
+    background: var(--white);
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.vendor-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.vendor-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.vendor-card-title {
+    color: var(--primary);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.vendor-card-contact {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+}
+
+.vendor-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.rating-stars {
+    color: var(--warning);
+    font-size: 1.2rem;
+}
+
+.rating-value {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+}
+
+.vendor-services {
+    background: var(--light-gray);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.vendor-services h4 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.vendor-services p {
+    margin: 0;
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.vendor-contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+}
+
+.contact-item a {
+    color: var(--success);
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* Vendor Form Styles */
+.vendor-form-section {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.form-grid-full {
+    grid-column: 1 / -1;
+}
+
+/* Service Tags */
+.service-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.service-tag {
+    background: var(--info);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Vendor Statistics */
+.vendor-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.vendor-stat-card {
+    background: linear-gradient(135deg, var(--accent), var(--danger));
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.vendor-stat-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.vendor-stat-card p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
+
+/* Event Association Styles */
+.event-association {
+    background: var(--light-gray);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--success);
+}
+
+.association-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.association-title {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.association-cost {
+    color: var(--success);
+    font-weight: bold;
+}
+
+.association-details {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .vendor-details-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .vendor-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .vendor-title-section {
+        justify-content: space-between;
+    }
+    
+    .vendor-actions {
+        justify-content: center;
+    }
+    
+    .vendor-contact-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .vendor-stats {
+        grid-template-columns: 1fr;
+    }
+}

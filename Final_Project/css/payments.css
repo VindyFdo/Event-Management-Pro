@@ -1,0 +1,314 @@
+/* Payments Module Specific Styles */
+
+.payment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.payment-title-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.payment-title-section h1 {
+    color: var(--primary);
+    margin: 0;
+}
+
+.payment-status {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.payment-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.payment-details-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.payment-main-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.payment-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.payment-info {
+    padding: 1rem;
+}
+
+.amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--success);
+    margin: 0;
+}
+
+/* Payment Status Styles */
+.status-pending {
+    background: var(--warning);
+    color: var(--primary);
+}
+
+.status-completed {
+    background: var(--success);
+    color: white;
+}
+
+.status-failed {
+    background: var(--error);
+    color: white;
+}
+
+.status-refunded {
+    background: var(--dark-gray);
+    color: white;
+}
+
+/* Payment Method Icons */
+.payment-method {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.payment-method::before {
+    content: "💳";
+    font-size: 1.2rem;
+}
+
+.payment-method[data-method="paypal"]::before {
+    content: "🅿️";
+}
+
+.payment-method[data-method="bank_transfer"]::before {
+    content: "🏦";
+}
+
+.payment-method[data-method="cash"]::before {
+    content: "💵";
+}
+
+/* Payment Form Styles */
+.payment-form {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.payment-form-section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--gray);
+}
+
+.payment-form-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.payment-form-section h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.amount-input {
+    position: relative;
+}
+
+.amount-input::before {
+    content: "$";
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--dark-gray);
+    font-weight: bold;
+    z-index: 1;
+}
+
+.amount-input input {
+    padding-left: 2rem;
+}
+
+/* Payment Statistics */
+.payment-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.payment-stat-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    border-top: 4px solid var(--success);
+}
+
+.payment-stat-card.pending {
+    border-top-color: var(--warning);
+}
+
+.payment-stat-card.failed {
+    border-top-color: var(--error);
+}
+
+.payment-stat-card.refunded {
+    border-top-color: var(--dark-gray);
+}
+
+.payment-stat-card h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+
+.payment-stat-card p {
+    margin: 0;
+    color: var(--dark-gray);
+}
+
+/* Transaction History */
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--gray);
+    transition: background-color 0.3s ease;
+}
+
+.transaction-item:hover {
+    background-color: var(--light-gray);
+}
+
+.transaction-item:last-child {
+    border-bottom: none;
+}
+
+.transaction-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction-amount {
+    font-weight: bold;
+    color: var(--success);
+    font-size: 1.1rem;
+}
+
+.transaction-date {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+}
+
+.transaction-method {
+    color: var(--info);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Payment Filters */
+.payment-filters {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.filter-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 1rem;
+    align-items: end;
+}
+
+/* Revenue Chart Container */
+.revenue-chart {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.chart-title {
+    color: var(--primary);
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.chart-period {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .payment-details-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .payment-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .payment-title-section {
+        justify-content: space-between;
+    }
+    
+    .payment-actions {
+        justify-content: center;
+    }
+    
+    .filter-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .payment-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .transaction-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}

@@ -1,0 +1,226 @@
+/* Attendees Module Specific Styles */
+
+.attendee-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.attendee-title-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.attendee-title-section h1 {
+    color: var(--primary);
+    margin: 0;
+}
+
+.attendee-status {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.attendee-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.attendee-details-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.attendee-main-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.attendee-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.status-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-registered {
+    background: var(--info);
+    color: white;
+}
+
+.status-attended {
+    background: var(--success);
+    color: white;
+}
+
+.status-cancelled {
+    background: var(--error);
+    color: white;
+}
+
+.status-pending {
+    background: var(--warning);
+    color: var(--primary);
+}
+
+.status-completed {
+    background: var(--success);
+    color: white;
+}
+
+.status-failed {
+    background: var(--error);
+    color: white;
+}
+
+.status-refunded {
+    background: var(--dark-gray);
+    color: white;
+}
+
+/* Registration Form Styles */
+.registration-form {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.form-section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--gray);
+}
+
+.form-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.form-section h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Bulk Email Styles */
+.email-preview {
+    background: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    border-left: 4px solid var(--success);
+}
+
+.email-preview h4 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.email-preview .preview-content {
+    background: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--gray);
+}
+
+.recipient-count {
+    background: var(--info);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* Attendee List Enhancements */
+.attendee-filters {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.filter-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 1rem;
+    align-items: end;
+}
+
+.attendee-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-box {
+    background: linear-gradient(135deg, var(--success), var(--info));
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat-box h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-box p {
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .attendee-details-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .attendee-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .attendee-title-section {
+        justify-content: space-between;
+    }
+    
+    .attendee-actions {
+        justify-content: center;
+    }
+    
+    .filter-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .attendee-stats {
+        grid-template-columns: 1fr;
+    }
+}

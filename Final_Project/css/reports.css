@@ -1,0 +1,414 @@
+/* Reports Module Specific Styles */
+
+.report-section {
+    margin-bottom: 3rem;
+}
+
+.report-section h2 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    border-bottom: 3px solid var(--success);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.chart-container {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.chart-container h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.chart-container canvas {
+    max-height: 400px;
+}
+
+.report-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.activity-item {
+    padding: 1rem;
+    border-left: 4px solid var(--success);
+    background: var(--light-gray);
+    margin-bottom: 0.5rem;
+    border-radius: 0 8px 8px 0;
+    transition: all 0.3s ease;
+}
+
+.activity-item:hover {
+    background: var(--gray);
+    transform: translateX(5px);
+}
+
+.activity-time {
+    color: var(--dark-gray);
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.activity-action {
+    font-weight: bold;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.activity-details {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+/* KPI Cards */
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.kpi-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.kpi-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, var(--success), var(--info));
+}
+
+.kpi-card.revenue::before {
+    background: linear-gradient(135deg, var(--light), var(--bright));
+}
+
+.kpi-card.events::before {
+    background: linear-gradient(135deg, var(--info), var(--success));
+}
+
+.kpi-card.attendees::before {
+    background: linear-gradient(135deg, var(--accent), var(--danger));
+}
+
+.kpi-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.kpi-label {
+    color: var(--dark-gray);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.kpi-change {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.kpi-change.positive {
+    background: var(--success);
+    color: white;
+}
+
+.kpi-change.negative {
+    background: var(--error);
+    color: white;
+}
+
+.kpi-change.neutral {
+    background: var(--gray);
+    color: var(--dark-gray);
+}
+
+/* Quick Stats */
+.quick-stats {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--gray);
+}
+
+.stat-row:last-child {
+    border-bottom: none;
+}
+
+.stat-label {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+}
+
+.stat-value {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.stat-value.revenue {
+    color: var(--success);
+}
+
+.stat-value.percentage {
+    color: var(--info);
+}
+
+.stat-value.count {
+    color: var(--warning);
+}
+
+/* Top Events Table */
+.top-events-table {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.top-events-table .table th {
+    background: linear-gradient(135deg, var(--secondary), var(--accent));
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+.top-events-table .table td {
+    vertical-align: middle;
+}
+
+.event-title-cell {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.attendee-count-badge {
+    background: var(--success);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/* Export Section */
+.export-section {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+}
+
+.export-description {
+    color: var(--dark-gray);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.export-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.export-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.export-button::before {
+    content: "📊";
+    font-size: 1.2rem;
+}
+
+.export-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Chart Customizations */
+.revenue-chart-container {
+    position: relative;
+    height: 400px;
+    margin-top: 1rem;
+}
+
+.chart-legend {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+}
+
+/* Trend Indicators */
+.trend-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+}
+
+.trend-up {
+    background: var(--success);
+    color: white;
+}
+
+.trend-down {
+    background: var(--error);
+    color: white;
+}
+
+.trend-stable {
+    background: var(--gray);
+    color: var(--dark-gray);
+}
+
+.trend-indicator::before {
+    font-size: 0.7rem;
+}
+
+.trend-up::before {
+    content: "↗";
+}
+
+.trend-down::before {
+    content: "↘";
+}
+
+.trend-stable::before {
+    content: "→";
+}
+
+/* Performance Metrics */
+.performance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.performance-metric {
+    background: linear-gradient(135deg, var(--light-gray), var(--gray));
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    border-left: 4px solid var(--success);
+}
+
+.performance-metric.warning {
+    border-left-color: var(--warning);
+}
+
+.performance-metric.danger {
+    border-left-color: var(--error);
+}
+
+.metric-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.metric-label {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .report-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .kpi-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .export-buttons {
+        flex-direction: column;
+    }
+    
+    .chart-legend {
+        gap: 1rem;
+    }
+    
+    .performance-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .kpi-value {
+        font-size: 2rem;
+    }
+    
+    .chart-container {
+        padding: 1rem;
+    }
+    
+    .revenue-chart-container {
+        height: 300px;
+    }
+}

@@ -1,0 +1,565 @@
+/* Public Pages Specific Styles */
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: var(--white);
+    padding: 120px 0 60px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Events Page */
+.events-content {
+    padding: 60px 0;
+    background: var(--light-gray);
+}
+
+.events-filters {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin-bottom: 3rem;
+}
+
+.filter-form {
+    display: grid;
+    grid-template-columns: 2fr 1fr auto;
+    gap: 1rem;
+    align-items: end;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Event Details Page */
+.event-details {
+    padding: 120px 0 60px;
+    background: var(--light-gray);
+}
+
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.event-title-section h1 {
+    color: var(--primary);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.status-available {
+    background: var(--success);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.status-full {
+    background: var(--error);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.event-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+.event-description {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.event-description h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.event-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.info-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.info-icon {
+    font-size: 2rem;
+    background: linear-gradient(135deg, var(--success), var(--info));
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-content h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.registration-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.registration-card h3 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.availability {
+    margin-bottom: 1.5rem;
+}
+
+.progress-bar {
+    background: var(--gray);
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.progress {
+    background: linear-gradient(135deg, var(--success), var(--info));
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.btn-full {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.registration-note {
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+    text-align: center;
+    margin: 0;
+}
+
+.fully-booked {
+    text-align: center;
+}
+
+.share-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.share-card h3 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.share-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.share-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+
+.share-btn:hover {
+    transform: translateX(5px);
+}
+
+.share-btn.facebook {
+    background: #1877F2;
+}
+
+.share-btn.twitter {
+    background: #1DA1F2;
+}
+
+.share-btn.linkedin {
+    background: #0A66C2;
+}
+
+.share-btn.email {
+    background: var(--accent);
+}
+
+/* Registration Page */
+.registration-section {
+    padding: 120px 0 60px;
+    background: var(--light-gray);
+}
+
+.registration-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.registration-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.registration-header h1 {
+    color: var(--primary);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.registration-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+.registration-form {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.event-summary {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+.event-summary h3 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.summary-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--gray);
+}
+
+.summary-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.summary-item strong {
+    color: var(--primary);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.form-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* About Page */
+.about-content {
+    padding: 60px 0;
+    background: var(--light-gray);
+}
+
+.about-intro {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.about-intro h2 {
+    color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--dark-gray);
+}
+
+.about-features {
+    margin-bottom: 3rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-item {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.feature-item .feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.about-stats {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.about-stats h2 {
+    color: var(--primary);
+    margin-bottom: 2rem;
+}
+
+.about-team {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.about-team h2 {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.team-item {
+    padding: 1.5rem;
+    border-left: 4px solid var(--success);
+    background: var(--light-gray);
+    border-radius: 0 10px 10px 0;
+}
+
+.team-item h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Page */
+.contact-content {
+    padding: 60px 0;
+    background: var(--light-gray);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.contact-info {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.contact-info h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.contact-methods {
+    margin: 2rem 0;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.method-icon {
+    font-size: 2rem;
+    background: linear-gradient(135deg, var(--success), var(--info));
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.method-info h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.business-hours {
+    background: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.business-hours h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.business-hours ul {
+    list-style: none;
+}
+
+.business-hours ul li {
+    margin-bottom: 0.5rem;
+    color: var(--dark-gray);
+}
+
+.contact-form {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+/* Active Navigation Link */
+.nav-link.active {
+    background: var(--accent);
+    color: white !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .filter-form {
+        grid-template-columns: 1fr;
+    }
+    
+    .event-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .event-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .registration-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .event-info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .event-actions {
+        flex-direction: column;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .event-title-section h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .events-filters {
+        padding: 1rem;
+    }
+    
+    .registration-form,
+    .contact-form,
+    .contact-info {
+        padding: 1.5rem;
+    }
+    
+    .info-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+```
